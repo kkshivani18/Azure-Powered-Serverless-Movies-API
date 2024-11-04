@@ -74,10 +74,14 @@ Replace {year} and {title} with the specific year or title for your query.
 
 ### 1. **Set Up Project Environment**  
 
-   Azure Functions Core Tools: For local function development.  
-   Python: Make sure you have Python 3.8 or 3.9 installed.  
-   Local Development: Set up your Python environment locally, installing necessary packages (azure-functions, azure-cosmos, azure-storage-blob).   
-![Installing packages for 3 SDKs](https://github.com/user-attachments/assets/726cf252-8e19-4ea9-955f-f7d202dd5e84)  
+  Python: Make sure you have Python 3.8 or 3.9 installed.  
+  Local Development: Set up your Python environment locally, installing necessary packages (azure-functions, azure-cosmos, azure-storage-blob).   
+  ![Installing packages for 3 SDKs](https://github.com/user-attachments/assets/726cf252-8e19-4ea9-955f-f7d202dd5e84) 
 
-   Azure Function App: Create an Azure Function App in the Azure Portal (or using Azure CLI) to host your serverless functions. 
+ Azure Functions Core Tools: For local function development.  
+    ```bash 
+    npm install -g azure-functions-core-tools@3 --unsafe-perm true
+  
+  Azure Function App: Create an Azure Function App in the Azure Portal (or using Azure CLI) to host your serverless functions. 
+  
 
