@@ -185,15 +185,49 @@ Replace {year} and {title} with the specific year or title for your query.
     After running the command 'func new', select the HTTP Trigger, then enter the name of the Function
     ![func_new_create](https://github.com/user-attachments/assets/6aec5317-1811-4100-84e1-a60a15bf5e5d)
 
-     
-     
+    Once, you do the above for all the functions, it means you have created HTTP Trigger for the function.
+
+   > An HTTP trigger in Azure Functions is a type of trigger that allows your serverless function to be invoked via an HTTP request. When you set up an HTTP-triggered           function, it becomes accessible through an endpoint URL, allowing you to interact with it directly over the web using standard HTTP methods like GET, POST, PUT, and         DELETE. This makes it ideal for building RESTful APIs or webhooks.
+
+   Now, implement the function logic for each function. The function_app.py is included in the repository. After appending the function logic to the file. Run the below        command to test the function locally.
+
+   ```bash
+   func start
+   ```
+
+   ![func_start](https://github.com/user-attachments/assets/3f6e0a08-ec90-47ab-95c6-bbdd0e894e3b)
+
+   The below image shows that once, you access your functions at http://localhost:7071/api/<FunctionName> to confirm they’re correctly recognized as HTTP triggers locally.     The terminal keeps track of the log. 
+
+   ![func_start_testing](https://github.com/user-attachments/assets/5208ec4b-5b4e-4a76-bb62-80bb5bc71bec)
+
+  #### GetMovies
+
+  ![GetMovies](https://github.com/user-attachments/assets/2a650567-6d87-411c-baa2-a133e1b6d3fa)  
+
+  #### GetMoviesByYear
+
+  ![GetMovieByYear](https://github.com/user-attachments/assets/360e5736-0069-4438-bb39-164dffffb0ae)  
+
+  #### GetMovieSummary  
+
+  ![GetMovieSummary](https://github.com/user-attachments/assets/98d8ce63-a31d-41bf-9dcc-0335d7c1ff15)  
+
+
+  After testing locally, you can now deploy it on the Azure functions-app service with the below command 
+
+  ![deploying_funcson_azure](https://github.com/user-attachments/assets/c5c541e7-4158-4657-b4ea-dde912c53337)
+
+  The below images confirms that the functions are deployed on Azure
+
+  ![deploy_funcs_done](https://github.com/user-attachments/assets/4d45109d-30a6-44a1-9071-fa74064facff)
+
+  ![deploy_func_azure](https://github.com/user-attachments/assets/b495f171-cb05-4c80-8af6-227ef82ee5c3)
+
+  To access your functions via Azure, you have to access your function which will be added at the end. Since, we have set the AuthLevel to Function. 
+  
+  ![func_key_azure](https://github.com/user-attachments/assets/d752003e-df49-40a2-8be8-02c2b9b58e29)
 
   
-  
-  
 
-  
-
-
-
- 
+   
