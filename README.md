@@ -114,7 +114,12 @@ Replace {year} and {title} with the specific year or title for your query.
 
   ##### Create Cosmosdb
 
-  ![moviesdb_creation](https://github.com/user-attachments/assets/54d116d2-2917-4cef-8636-e8a1292b1564)
+  ![moviesdb_creation](https://github.com/user-attachments/assets/54d116d2-2917-4cef-8636-e8a1292b1564)  
+
+  ![moviesdb](https://github.com/user-attachments/assets/fdef0a4f-74a4-4c8a-a603-1020984723dc)  
+
+  
+
 
 
 
