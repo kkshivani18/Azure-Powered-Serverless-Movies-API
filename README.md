@@ -12,18 +12,19 @@ This API includes the following serverless functions:
 
 ## Steps
 1. Create Your Cloud Infrastructure
-Set up your SDK: Use the SDK of your cloud provider (e.g., AWS SDK, Azure SDK, Google Cloud SDK) to configure your infrastructure.
-NoSQL Database: Create a NoSQL database (e.g., Cosmos DB on Azure, DynamoDB on AWS, or Firestore on Google Cloud).
+Set up your SDK: Use the SDK of your cloud provider (e.g., AWS SDK, Azure SDK, Google Cloud SDK) to configure your infrastructure.  
+NoSQL Database: Create a NoSQL database (e.g., Cosmos DB on Azure, DynamoDB on AWS, or Firestore on Google Cloud).  
 Cloud Storage: Set up cloud storage (e.g., Azure Blob Storage, Amazon S3, or Google Cloud Storage) for storing movie cover images.
+
 Serverless Functions: Configure serverless functions for each endpoint:
 #### GetMovies
 #### GetMoviesByYear
 #### GetMovieSummary (For AI summaries)
-Note: Check for additional setup steps based on your cloud provider, such as configuring permissions, setting up API Gateway, or obtaining necessary keys.  
+Note: Check for additional setup steps based on your cloud provider, such as configuring permissions, setting up API Gateway, or obtaining necessary keys.   
 
-2. Prepare Your Data
+2. Prepare Your Data  
 Movie Data: Gather or create a dataset of movies with relevant information, such as title, release year, genre, etc.  
-Cover Images: Upload movie cover images to your cloud storage. Ensure each movie has a unique URL for its cover image.  
+Cover Images: Upload movie cover images to your cloud storage. Ensure each movie has a unique URL for its cover image.    
 
 3. Create Serverless Functions
 Each serverless function is created to handle a specific request for movie information:
@@ -39,7 +40,7 @@ Response: Returns a JSON list of movies that match the specified year.
 
 GetMovieSummary :
 Description: Returns an AI-generated summary for a specified movie.  
-Parameters:title (query parameter): Specifies the title of the movie for which the summary is requested.  
+Parameters: title (query parameter): Specifies the title of the movie for which the summary is requested.  
 Response: A summary generated using AI for the requested movie title.  
 
 ## Installation
