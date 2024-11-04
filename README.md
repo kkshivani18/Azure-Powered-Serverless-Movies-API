@@ -72,8 +72,8 @@ Replace {year} and {title} with the specific year or title for your query.
 
 ## Step-by-step guide for building the project
 
-### 1. **Set Up Your Project Environment**  
+### 1. **Set Up Project Environment**  
    Local Development: Set up your Python environment locally, installing necessary packages (azure-functions, azure-cosmos, azure-storage-blob).  
    Azure Function App: Create an Azure Function App in the Azure Portal (or using Azure CLI) to host your serverless functions.  
 
-![Installing all 3 SDKs](https://github.com/user-attachments/assets/726cf252-8e19-4ea9-955f-f7d202dd5e84)
+![Installing packages for 3 SDKs](https://github.com/user-attachments/assets/726cf252-8e19-4ea9-955f-f7d202dd5e84)
