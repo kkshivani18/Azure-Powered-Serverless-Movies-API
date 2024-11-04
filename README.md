@@ -67,3 +67,5 @@ Once deployed, the API provides the following endpoints:
 - GetMoviesByYear: GET /movies?year={year}  
 - GetMovieSummary: GET /movie-summary?title={title}  
 Replace {year} and {title} with the specific year or title for your query.
+
+**---------------------------------------------------------------------------------------------------------------------------------------------------------------**
