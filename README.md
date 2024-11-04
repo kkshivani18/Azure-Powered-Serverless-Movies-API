@@ -110,10 +110,12 @@ Replace {year} and {title} with the specific year or title for your query.
   
   ![function app](https://github.com/user-attachments/assets/c7779ee0-ffd0-4781-a6ba-05fb24b61df7)  
 
-  ![function app created](https://github.com/user-attachments/assets/cc542856-32e7-43a6-b4b9-336ec3a74fa1)
+  ![function app created](https://github.com/user-attachments/assets/cc542856-32e7-43a6-b4b9-336ec3a74fa1)  
 
+  ##### Create Cosmosdb
 
-  
+  ![moviesdb_creation](https://github.com/user-attachments/assets/54d116d2-2917-4cef-8636-e8a1292b1564)
+
 
 
  
