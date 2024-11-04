@@ -243,5 +243,5 @@ Replace {year} and {title} with the specific year or title for your query.
   ![image](https://github.com/user-attachments/assets/6e21df2e-59c3-483b-a786-144a20c535c0)
   
   
-  Therefore, This completes the API logic for each function in your Serverless Movies API
+  Therefore, this completes the API logic for each function in your Serverless Movies API
    
