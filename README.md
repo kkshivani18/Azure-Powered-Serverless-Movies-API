@@ -95,17 +95,23 @@ Replace {year} and {title} with the specific year or title for your query.
 
   You can Azure CLI or Azure portal.  
   
-  Create Resource Group:
+  ##### Create Resource Group:  
+  
   ```bash
   az group create --name <ResourceGroupName> --location <Location>
   ```
   ![image](https://github.com/user-attachments/assets/f1c0c9b5-1cf7-4e0f-bafc-b35c4b8524f8)  
 
-  Create Storage account:
-  ![moviesstacc](https://github.com/user-attachments/assets/e38e4d37-5bc3-4b3e-8b9f-2f62b791b870)
+  ##### Create Storage account:  
+  
+  ![moviesstacc](https://github.com/user-attachments/assets/55483a02-5935-44ba-8e02-aed529730257)  
 
-  Azure Function App: Create an Azure Function App in the Azure Portal (or using Azure CLI) to host your serverless functions.  
-  ![image](https://github.com/user-attachments/assets/8d615ceb-8dc6-4b11-8234-0dd70cdc9cfb)
+  ##### Azure Function App: Create an Azure Function App in the Azure Portal (or using Azure CLI) to host your serverless functions.  
+  
+  ![function app](https://github.com/user-attachments/assets/c7779ee0-ffd0-4781-a6ba-05fb24b61df7)  
+
+  ![function app created](https://github.com/user-attachments/assets/cc542856-32e7-43a6-b4b9-336ec3a74fa1)
+
 
   
 
