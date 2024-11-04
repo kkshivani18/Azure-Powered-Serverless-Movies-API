@@ -75,13 +75,39 @@ Replace {year} and {title} with the specific year or title for your query.
 ### 1. **Set Up Project Environment**  
 
   Python: Make sure you have Python 3.8 or 3.9 installed.  
+  ```python
+     python -m venv ./<your-venv>
+  ```
   Local Development: Set up your Python environment locally, installing necessary packages (azure-functions, azure-cosmos, azure-storage-blob).   
   ![Installing packages for 3 SDKs](https://github.com/user-attachments/assets/726cf252-8e19-4ea9-955f-f7d202dd5e84) 
 
- Azure Functions Core Tools: For local function development.  
+  Azure Functions Core Tools: For local function development.  
    ```bash
     npm install -g azure-functions-core-tools@3 --unsafe-perm true
    ```
+### 2. **Create resources on Azure** (storage-account, cosmosdb, function-app)
 
-Azure Function App: Create an Azure Function App in the Azure Portal (or using Azure CLI) to host your serverless functions.
+> **Note**: Before creating any resource in Azure, always create the resource group for the project. It helps in organizing all the resources required for the project. 
 
+   ```bash
+   az login
+  ```
+
+  You can Azure CLI or Azure portal.  
+  
+  Create Resource Group:
+  ```bash
+  az group create --name <ResourceGroupName> --location <Location>
+  ```
+  ![image](https://github.com/user-attachments/assets/f1c0c9b5-1cf7-4e0f-bafc-b35c4b8524f8)  
+
+  Create Storage account:
+  ![moviesstacc](https://github.com/user-attachments/assets/e38e4d37-5bc3-4b3e-8b9f-2f62b791b870)
+
+  Azure Function App: Create an Azure Function App in the Azure Portal (or using Azure CLI) to host your serverless functions.  
+  ![image](https://github.com/user-attachments/assets/8d615ceb-8dc6-4b11-8234-0dd70cdc9cfb)
+
+  
+
+
+ 
