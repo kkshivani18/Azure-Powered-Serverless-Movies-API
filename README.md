@@ -43,17 +43,16 @@ Description: Returns an AI-generated summary for a specified movie.
 Parameters:
 title (query parameter): Specifies the title of the movie for which the summary is requested.
 Response: A summary generated using AI for the requested movie title.
-Installation
-Clone the Repository:
 
-bash
-git clone https://github.com/your-username/serverless-movies-api.git
-cd serverless-movies-api
-Install Dependencies:
+## Installation
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/your-username/serverless-movies-api.git
+   cd serverless-movies-api
 
 Install SDK dependencies based on your cloud provider.
 Deploy Cloud Resources:
-
 Use your SDK or cloud console to deploy the NoSQL database, storage, and serverless functions.
 
 ## Usage
