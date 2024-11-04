@@ -228,6 +228,20 @@ Replace {year} and {title} with the specific year or title for your query.
   
   ![func_key_azure](https://github.com/user-attachments/assets/d752003e-df49-40a2-8be8-02c2b9b58e29)
 
-  
 
+  ### Testing each function deployed on Azure
+  #### GetMovies Function
+
+  ![Screenshot 2024-11-04 155447](https://github.com/user-attachments/assets/618215bb-26c6-45e2-976f-a75a1add4076)
+
+  #### GetMovieByYear
+
+  ![image](https://github.com/user-attachments/assets/15f6cfb0-3c2d-47e8-8dc9-7876ee9ff13d)
+
+  #### GetMovieSummary
+
+  ![image](https://github.com/user-attachments/assets/6e21df2e-59c3-483b-a786-144a20c535c0)
+  
+  
+  Therefore, This completes the API logic for each function in your Serverless Movies API
    
