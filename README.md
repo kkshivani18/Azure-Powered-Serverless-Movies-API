@@ -68,4 +68,8 @@ Once deployed, the API provides the following endpoints:
 - GetMovieSummary: GET /movie-summary?title={title}  
 Replace {year} and {title} with the specific year or title for your query.
 
-**---------------------------------------------------------------------------------------------------------------------------------------------------------------**
+**-------------------------------------------------------------------------------------------------------------------------------------------------------------**
+
+## Step-by-step guide for building the project
+
+
