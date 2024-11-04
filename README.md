@@ -155,7 +155,7 @@ Replace {year} and {title} with the specific year or title for your query.
 
 ### 4. Configuring Function app  
 
-  #### 1. Set Up Local Development Environment
+  1. Set Up Local Development Environment
 
    ```bash
    mkdir MoviesApi
@@ -172,11 +172,18 @@ Replace {year} and {title} with the specific year or title for your query.
      pip install azure-functions azure-cosmos azure-storage-blob
      ```
      
-  3. **Create Individual Functions**: For each API endpoint, create an HTTP-triggered function
+3. **Create Individual Functions**: For each API endpoint, create an HTTP-triggered function
 
      ```bash
      func new
      ```
+    Choose the HTTP trigger template and name your functions:
+     - GetMovies
+     - GetMoviesByYear
+     - GetMovieSummary
+
+    After running the command 'func new', select the HTTP Trigger, then enter the name of the Function
+    ![func_new_create](https://github.com/user-attachments/assets/6aec5317-1811-4100-84e1-a60a15bf5e5d)
 
      
      
