@@ -111,6 +111,7 @@ Replace {year} and {title} with the specific year or title for your query.
 
  
   #### Azure Function App: Create an Azure Function App in the Azure Portal (or using Azure CLI) to host your serverless functions.  
+  
   > While creating function-app, select Consumption plan for this project. In the storage section, select the storage account you created earlier. It is recommended to          create all the resources in the same region to avoid some trouble later. In Monitoring sections, enable Application Insights, select yes.
   
   ![function app](https://github.com/user-attachments/assets/c7779ee0-ffd0-4781-a6ba-05fb24b61df7)  
@@ -154,6 +155,8 @@ Replace {year} and {title} with the specific year or title for your query.
 
 ### 4. Configuring Function app  
 
+  #### 1. Set Up Local Development Environment
+
    ```bash
    mkdir MoviesApi
 
@@ -161,8 +164,26 @@ Replace {year} and {title} with the specific year or title for your query.
 
    func init --python
    ```
-  
+
   ![func_init](https://github.com/user-attachments/assets/773f980d-8d21-41a1-bc4e-dc2e3b107173)
+
+  2. Ensure, you have already installed required libraries. Else, you can install the Azure SDKs for Function app Cosmos DB and Blob Storage with the below command.
+     ```bash
+     pip install azure-functions azure-cosmos azure-storage-blob
+     ```
+     
+  3. **Create Individual Functions**: For each API endpoint, create an HTTP-triggered function
+
+     ```bash
+     func new
+     ```
+
+     
+     
+
+  
+  
+  
 
   
 
