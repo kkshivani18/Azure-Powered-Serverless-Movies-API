@@ -1,4 +1,4 @@
-# Azure-Powered-Serverless-Movies-API  
+![func_init](https://github.com/user-attachments/assets/d444f1e5-c73c-4d19-b707-1a61f1465197)![moviesdb](https://github.com/user-attachments/assets/62c4f140-e81f-4bbc-ac41-8630c7065825)# Azure-Powered-Serverless-Movies-API  
 
 **Overview and Workflow of the Project**
 
@@ -70,6 +70,7 @@ Replace {year} and {title} with the specific year or title for your query.
 
 **-------------------------------------------------------------------------------------------------------------------------------------------------------------**
 
+
 ## Step-by-step guide for building the project
 
 ### 1. **Set Up Project Environment**  
@@ -85,6 +86,7 @@ Replace {year} and {title} with the specific year or title for your query.
    ```bash
     npm install -g azure-functions-core-tools@3 --unsafe-perm true
    ```
+
 ### 2. **Create resources on Azure** (storage-account, cosmosdb, function-app)
 
 > **Note**: Before creating any resource in Azure, always create the resource group for the project. It helps in organizing all the resources required for the project. 
@@ -95,31 +97,74 @@ Replace {year} and {title} with the specific year or title for your query.
 
   You can Azure CLI or Azure portal.  
   
-  ##### Create Resource Group:  
+  #### Create Resource Group:  
   
   ```bash
   az group create --name <ResourceGroupName> --location <Location>
   ```
   ![image](https://github.com/user-attachments/assets/f1c0c9b5-1cf7-4e0f-bafc-b35c4b8524f8)  
 
-  ##### Create Storage account:  
+ 
+  #### Create Storage account:  
   
   ![moviesstacc](https://github.com/user-attachments/assets/55483a02-5935-44ba-8e02-aed529730257)  
 
-  ##### Azure Function App: Create an Azure Function App in the Azure Portal (or using Azure CLI) to host your serverless functions.  
+ 
+  #### Azure Function App: Create an Azure Function App in the Azure Portal (or using Azure CLI) to host your serverless functions.  
+  > While creating function-app, select Consumption plan for this project. In the storage section, select the storage account you created earlier. It is recommended to          create all the resources in the same region to avoid some trouble later. In Monitoring sections, enable Application Insights, select yes.
   
   ![function app](https://github.com/user-attachments/assets/c7779ee0-ffd0-4781-a6ba-05fb24b61df7)  
 
   ![function app created](https://github.com/user-attachments/assets/cc542856-32e7-43a6-b4b9-336ec3a74fa1)  
 
-  ##### Create Cosmosdb
+  
+  #### Create Cosmosdb
 
   ![moviesdb_creation](https://github.com/user-attachments/assets/54d116d2-2917-4cef-8636-e8a1292b1564)  
 
+  ![cosmosdbacc](https://github.com/user-attachments/assets/9d8e48bb-89be-451b-9ae3-b6acc75e3813)
+
   ![moviesdb](https://github.com/user-attachments/assets/fdef0a4f-74a4-4c8a-a603-1020984723dc)  
 
-  
+  > **Note**: Store your Cosmos DB connection string and Blob Storage connection string in environment variables for secure access.
 
+ 
+### 3. Configuring Blob Storage and CosmosDB
+
+  While displaying the serverless function output , we have to include the coverpage URLs of the movies. We have to store the images in blob storage in storage                account to get the URL for CosmosDB.   
+
+  #### Upload Images to Azure Blob Storage  
+  
+  Upload it from local directory to Container on Storage Account.  
+  
+  ![image](https://github.com/user-attachments/assets/3e5d0c92-491c-433b-bd7a-78e684c03162)
+
+  #### Using OMDB API for Movies
+  Implement API calls to the OMDB API to fetch movie details. Store the relevant data in your Azure Cosmos DB.  
+
+  #### Configure CosmosDB
+
+  After uploading the images on blob, you can access the URLs. You can manually add data to cosmosdb or add via code and deploy the data on CosmosDB. 
+  I used code for deployment. You can access my code uploaded in the repository. 
+
+  ![movies_inserted_to_cosmodb](https://github.com/user-attachments/assets/4d81eb02-5541-43f1-960b-e4d439ffdc4a)
+
+  ![movies_added_cosmodb](https://github.com/user-attachments/assets/5fb7a09f-aec1-4d25-8950-886a396fee2e)
+
+
+### 4. Configuring Function app  
+
+   ```bash
+   mkdir MoviesApi
+
+   cd MoviesApi
+
+   func init --python
+   ```
+  
+  ![func_init](https://github.com/user-attachments/assets/773f980d-8d21-41a1-bc4e-dc2e3b107173)
+
+  
 
 
 
