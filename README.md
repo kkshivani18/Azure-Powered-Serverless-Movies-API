@@ -6,9 +6,9 @@ The Serverless Movies API is a capstone project that showcases a serverless arch
 ## Project Structure
 This API includes the following serverless functions:
 
-GetMovies: Fetches a list of all movies, including their details and cover image URLs.
-GetMoviesByYear: Retrieves a list of movies based on a specified release year.
-GetMovieSummary (Extra Credit): Provides an AI-generated summary for a specific movie.
+### GetMovies: Fetches a list of all movies, including their details and cover image URLs.
+### GetMoviesByYear: Retrieves a list of movies based on a specified release year.
+### GetMovieSummary : Provides an AI-generated summary for a specific movie.
 
 ## Steps
 1. Create Your Cloud Infrastructure
@@ -16,9 +16,9 @@ Set up your SDK: Use the SDK of your cloud provider (e.g., AWS SDK, Azure SDK, G
 NoSQL Database: Create a NoSQL database (e.g., Cosmos DB on Azure, DynamoDB on AWS, or Firestore on Google Cloud).
 Cloud Storage: Set up cloud storage (e.g., Azure Blob Storage, Amazon S3, or Google Cloud Storage) for storing movie cover images.
 Serverless Functions: Configure serverless functions for each endpoint:
-### GetMovies
-### GetMoviesByYear
-### GetMovieSummary (For AI summaries)
+#### GetMovies
+#### GetMoviesByYear
+#### GetMovieSummary (For AI summaries)
 Note: Check for additional setup steps based on your cloud provider, such as configuring permissions, setting up API Gateway, or obtaining necessary keys.
 
 2. Prepare Your Data
@@ -28,17 +28,16 @@ Cover Images: Upload movie cover images to your cloud storage. Ensure each movie
 Each serverless function is created to handle a specific request for movie information:
 
 GetMovies:
-
 Description: Retrieves a JSON list of all movies stored in the NoSQL database.
 Response: Includes details such as title, genre, release year, and a cover image URL for each movie.
-GetMoviesByYear:
 
+GetMoviesByYear:
 Description: Fetches a list of movies released in a specified year.
 Parameters:
 year (query parameter): Specifies the release year of the movies.
 Response: Returns a JSON list of movies that match the specified year.
-GetMovieSummary (Extra Credit):
 
+GetMovieSummary (Extra Credit):
 Description: Returns an AI-generated summary for a specified movie.
 Parameters:
 title (query parameter): Specifies the title of the movie for which the summary is requested.
@@ -51,7 +50,7 @@ Response: A summary generated using AI for the requested movie title.
    git clone https://github.com/your-username/serverless-movies-api.git
    cd serverless-movies-api
 
-Install SDK dependencies based on your cloud provider.
+Install SDK dependencies based on the cloud provider.
 Deploy Cloud Resources:
 Use your SDK or cloud console to deploy the NoSQL database, storage, and serverless functions.
 
