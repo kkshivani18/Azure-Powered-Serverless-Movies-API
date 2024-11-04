@@ -57,8 +57,7 @@ Use your SDK or cloud console to deploy the NoSQL database, storage, and serverl
 ## Usage
 Once deployed, the API provides the following endpoints:
 
-GetMovies: GET /movies
-GetMoviesByYear: GET /movies?year={year}
-GetMovieSummary: GET /movie-summary?title={title}
-
+- GetMovies: GET /movies
+- GetMoviesByYear: GET /movies?year={year}
+- GetMovieSummary: GET /movie-summary?title={title}
 Replace {year} and {title} with the specific year or title for your query.
