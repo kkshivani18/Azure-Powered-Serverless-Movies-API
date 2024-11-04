@@ -1,4 +1,4 @@
-![func_init](https://github.com/user-attachments/assets/d444f1e5-c73c-4d19-b707-1a61f1465197)![moviesdb](https://github.com/user-attachments/assets/62c4f140-e81f-4bbc-ac41-8630c7065825)# Azure-Powered-Serverless-Movies-API  
+# Azure-Powered-Serverless-Movies-API  
 
 **Overview and Workflow of the Project**
 
