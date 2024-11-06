@@ -284,7 +284,7 @@ Replace {year} and {title} with the specific year or title for your query.
 
 ### 4. **Troubleshooting**: While building the project, you may face some issues.
 
-   I faced some issues, and the below solutions worked for me.
+  I faced some issues, and the below solutions worked for me.
 
    - [Deployment technologies in Azure Functions | Microsoft Learn](https://learn.microsoft.com/en-us/azure/azure-functions/functions-deployment-technologies?tabs=windows#trigger-syncing)
    - [Sync Web Apps Function Triggers - BadRequest (Azure) - Stack Overflow](https://stackoverflow.com/questions/77426290/sync-web-apps-function-triggers-badrequest-azure#:~:text=Sync%20Web%20Apps%20Function%20Triggers%20-%20BadRequest%20This,sure%20the%20storage%20account%20is%20up%20to%20public.)
