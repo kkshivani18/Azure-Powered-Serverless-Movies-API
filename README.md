@@ -22,9 +22,8 @@ This API includes the following serverless functions:
 - **Serverless Functions**: Configure serverless functions for each endpoint:
   - **GetMovies**
   - **GetMoviesByYear**
-  - **GetMovieSummary** (For AI summaries)
-  
-
+  - **GetMovieSummary** (For AI summaries)  
+    
   > **Note**: Check for additional setup steps based on your cloud provider, such as configuring permissions, setting up API Gateway, or obtaining necessary keys.
 
 ### 2. Prepare Your Data  
