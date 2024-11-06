@@ -142,7 +142,19 @@ Replace {year} and {title} with the specific year or title for your query.
   ![function app created](https://github.com/user-attachments/assets/cc542856-32e7-43a6-b4b9-336ec3a74fa1)  
 
   
-  #### Create Cosmosdb
+  #### Create Cosmosdb  
+
+  - Search for Cosmos DB in Azure portal: In the search bar, type "Azure Cosmos DB" and select it.
+  - Click 'Create': Start creating a new Cosmos DB account.
+  - Choose API: Select an API based on your use case (e.g., Core (SQL) API for a document model).
+  - Enter Resource Group: Select an existing resource group or create a new one.
+  - Enter Account Name: Provide a unique name for the Cosmos DB account.
+  - Select Region: Choose the same region for the database as chosen for functions-app and storage-account.  
+  - Configure Capacity Mode: Choose "Provisioned throughput" or "Serverless" (if available) based on your needs.
+  - Review and Create: Review your settings and click "Create" to deploy the Cosmos DB account.
+  
+  After the account is created, you can add databases and containers to store your data. Cosmos DB is used in this project for efficient storage and retrieval of movie data   for the Movies API.
+
 
   ![moviesdb_creation](https://github.com/user-attachments/assets/54d116d2-2917-4cef-8636-e8a1292b1564)  
 
