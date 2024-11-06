@@ -218,6 +218,7 @@ Replace {year} and {title} with the specific year or title for your query.
      - GetMovieSummary
 
     After running the command 'func new', select the HTTP Trigger, then enter the name of the Function
+   
     ![func_new_create](https://github.com/user-attachments/assets/6aec5317-1811-4100-84e1-a60a15bf5e5d)
 
     Once, you do the above for all the functions, it means you have created HTTP Trigger for the function.
