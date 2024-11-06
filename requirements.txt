@@ -1,0 +1,16 @@
+azure-core==1.32.0
+azure-cosmos==4.7.0
+azure-functions==1.21.3
+azure-storage-blob==12.23.1
+certifi==2024.8.30
+cffi==1.17.1
+charset-normalizer==3.4.0
+cryptography==43.0.3
+idna==3.10
+isodate==0.7.2
+pycparser==2.22
+requests==2.32.3
+simplejson==3.19.3
+six==1.16.0
+typing_extensions==4.12.2
+urllib3==2.2.3
