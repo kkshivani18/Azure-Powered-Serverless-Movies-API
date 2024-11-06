@@ -282,7 +282,7 @@ Replace {year} and {title} with the specific year or title for your query.
   Therefore, this completes the API logic for each function in your Serverless Movies API  
 
 
-4. **Troubleshooting**: While building the project, you may face some issues.
+### 4. **Troubleshooting**: While building the project, you may face some issues.
 
    I faced some issues, and the below solutions worked for me.
 
