@@ -94,7 +94,7 @@ Replace {year} and {title} with the specific year or title for your query.
    az login
   ```
 
-  You can Azure CLI or Azure portal.  
+  You can do it through Azure CLI or Azure portal.  
   
   #### Create Resource Group:  
   
