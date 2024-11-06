@@ -105,11 +105,35 @@ Replace {year} and {title} with the specific year or title for your query.
 
  
   #### Create Storage account:  
+
+  In your Serverless Movies API project, the storage account (specifically, Blob Storage within it) is used to store movie cover images. These image URLs are then saved in    your Cosmos DB and referenced in the API responses, allowing clients to access and display the cover images.  
+
+  Search for Storage Accounts in Azure portal: In the search bar at the top, type "Storage Accounts" and select it.
+  Click 'Create': Select "Create" to start setting up a new storage account.
+  Choose Subscription and Resource Group: Select the current subscription and the above created resource group.
+  Provide a Storage Account Name: This must be unique across Azure and use only lowercase letters and numbers.
+  Choose Region: Select the region closest to your users for optimized latency.
+  Select Performance and Redundancy: Choose the performance tier (Standard or Premium) and redundancy option.
+  Review and Create: Click "Review + Create" to verify settings, then "Create" to deploy the storage account.
+
+  > Note - Choose the same location for Storage account, CosmosDB account and Functions app. 
+
   
   ![moviesstacc](https://github.com/user-attachments/assets/55483a02-5935-44ba-8e02-aed529730257)  
 
  
   #### Azure Function App: Create an Azure Function App in the Azure Portal (or using Azure CLI) to host your serverless functions.  
+
+  Search for Function App from Azure portal: Type "Function App" in the search bar and select it.
+  Click 'Create': Start the process of creating a new Function App.
+  Select Subscription and Resource Group: Choose the above created resource group. 
+  Enter Function App Name: Provide a globally unique name for the Function App.
+  Choose Runtime Stack: Select the runtime stack (e.g., Python, Node.js) and the version.
+  Select Region: Choose a region where the Function App will be hosted.
+  Choose Hosting Plan: Under "Hosting Plan," select "Consumption (Serverless)" for pay-per-execution billing.
+  Configure Storage: Select the above created storage account where all the images of the movie coverpages is stored. 
+  Review and Create: Review the settings, then click "Create" to deploy the Function App.
+  This setup allows your function to scale automatically and minimizes costs, as you’re only billed for the actual execution time.
   
   > While creating function-app, select Consumption plan for this project. In the storage section, select the storage account you created earlier. It is recommended to          create all the resources in the same region to avoid some trouble later. In Monitoring sections, enable Application Insights, select yes.
   
