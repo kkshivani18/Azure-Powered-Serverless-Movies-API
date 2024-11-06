@@ -146,7 +146,7 @@ Replace {year} and {title} with the specific year or title for your query.
 
   - Search for Cosmos DB in Azure portal: In the search bar, type "Azure Cosmos DB" and select it.
   - Click 'Create': Start creating a new Cosmos DB account.
-  - Choose API: Select an API based on your use case (e.g., Core (SQL) API for a document model).
+  - Choose API: Select Azure Cosmos DB for NoSQL for this project.  
   - Enter Resource Group: Select an existing resource group or create a new one.
   - Enter Account Name: Provide a unique name for the Cosmos DB account.
   - Select Region: Choose the same region for the database as chosen for functions-app and storage-account.  
